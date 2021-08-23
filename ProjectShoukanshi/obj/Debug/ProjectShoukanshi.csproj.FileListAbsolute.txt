@@ -1,0 +1,19 @@
+C:\Users\hizak\AppData\Local\Temporary Projects\ProjectShoukanshi\bin\Debug\ProjectShoukanshi.exe.config
+C:\Users\hizak\AppData\Local\Temporary Projects\ProjectShoukanshi\bin\Debug\ProjectShoukanshi.exe
+C:\Users\hizak\AppData\Local\Temporary Projects\ProjectShoukanshi\bin\Debug\ProjectShoukanshi.pdb
+C:\Users\hizak\AppData\Local\Temporary Projects\ProjectShoukanshi\obj\Debug\ProjectShoukanshi.csprojResolveAssemblyReference.cache
+C:\Users\hizak\AppData\Local\Temporary Projects\ProjectShoukanshi\obj\Debug\ProjectShoukanshi.Form1.resources
+C:\Users\hizak\AppData\Local\Temporary Projects\ProjectShoukanshi\obj\Debug\ProjectShoukanshi.Properties.Resources.resources
+C:\Users\hizak\AppData\Local\Temporary Projects\ProjectShoukanshi\obj\Debug\ProjectShoukanshi.csproj.GenerateResource.Cache
+C:\Users\hizak\AppData\Local\Temporary Projects\ProjectShoukanshi\obj\Debug\ProjectShoukanshi.exe
+C:\Users\hizak\AppData\Local\Temporary Projects\ProjectShoukanshi\obj\Debug\ProjectShoukanshi.pdb
+C:\Users\hizak\Documents\ProjectShoukanshi\ProjectShoukanshi\ProjectShoukanshi\bin\Debug\ProjectShoukanshi.exe.config
+C:\Users\hizak\Documents\ProjectShoukanshi\ProjectShoukanshi\ProjectShoukanshi\obj\Debug\ProjectShoukanshi.exe
+C:\Users\hizak\Documents\ProjectShoukanshi\ProjectShoukanshi\ProjectShoukanshi\obj\Debug\ProjectShoukanshi.pdb
+C:\Users\hizak\Documents\ProjectShoukanshi\ProjectShoukanshi\ProjectShoukanshi\bin\Debug\ProjectShoukanshi.exe
+C:\Users\hizak\Documents\ProjectShoukanshi\ProjectShoukanshi\ProjectShoukanshi\bin\Debug\ProjectShoukanshi.pdb
+C:\Users\hizak\Documents\ProjectShoukanshi\ProjectShoukanshi\ProjectShoukanshi\obj\Debug\ProjectShoukanshi.Form1.resources
+C:\Users\hizak\Documents\ProjectShoukanshi\ProjectShoukanshi\ProjectShoukanshi\obj\Debug\ProjectShoukanshi.Properties.Resources.resources
+C:\Users\hizak\Documents\ProjectShoukanshi\ProjectShoukanshi\ProjectShoukanshi\obj\Debug\ProjectShoukanshi.csproj.GenerateResource.Cache
+C:\Users\hizak\Documents\ProjectShoukanshi\ProjectShoukanshi\ProjectShoukanshi\obj\Debug\ProjectShoukanshi.Main.resources
+C:\Users\hizak\Documents\ProjectShoukanshi\ProjectShoukanshi\ProjectShoukanshi\obj\Debug\ProjectShoukanshi.csprojResolveAssemblyReference.cache
