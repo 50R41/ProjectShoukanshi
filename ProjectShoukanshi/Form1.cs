@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace ProjectShoukanshi
 {
@@ -27,31 +28,37 @@ namespace ProjectShoukanshi
         private void button1_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-NTD0N2N\PROJECTAIDEN01;Initial Catalog=DataShoukan;Integrated Security=True");
-            SqlCommand cmd = new SqlCommand("select * From Login where username='" + txtUSER.Text+"' and password='"+ txtPASS.Text +"'",con);
+            SqlCommand cmd = new SqlCommand("Select * From Login where username='" + txtUSER.Text + "' and password='" + txtPASS.Text + "'", con);
             SqlDataAdapter sda = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             sda.Fill(dt);
-            string cmbItemValue=comboBox1.SelectedItem.ToString();
+            if (comboBox1.SelectedIndex == -1)
+            {
+                MessageBox.Show("Please select usertype");
+                return;
+            }
+            string cmdItemValue = comboBox1.SelectedItem.ToString();
             if (dt.Rows.Count > 0)
             {
-                for (int i =0; i<dt.Rows.Count; i++)
+                
+                for (int i = 0; i < dt.Rows.Count; i++)
                 {
-                    if (dt.Rows[i]["UserType"].ToString() == cmbItemValue)
+                    if (dt.Rows[i]["UserType"].ToString() == cmdItemValue)
                     {
-                       MessageBox.Show("you are login as " + dt.Rows[i][2]);
+                        MessageBox.Show("you are login as " + dt.Rows[i][2]);
                         if (comboBox1.SelectedIndex == 0)
                         {
                             Main ss = new Main();
-                            ss.ShowDialog();
-                           
+                            ss.Show();
+                            this.Hide();
                         }
-                        else if(comboBox1.SelectedIndex == 1)
+                        else if (comboBox1.SelectedIndex == 1)
                         {
                             MainUser sc = new MainUser();
-                            sc.ShowDialog();
-                          
+                            sc.Show();
+                            this.Hide();
                         }
-                        
+
                     }
                 }
             }
@@ -87,6 +94,11 @@ namespace ProjectShoukanshi
         private void btnEXIT_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

@@ -12,9 +12,89 @@ namespace ProjectShoukanshi
 {
     public partial class Main : Form
     {
+        //Fields
+        private Button currentButton;
+        private Random random;
+        private int tempIndex;
+        
+        //Constructor
         public Main()
         {
             InitializeComponent();
         }
+
+        //Methods
+        private Color SelectThemeColor()
+        {
+            int index = random.Next(ThemeColor.Colorlist.Count);
+            while (tempIndex == index)
+            {
+                random.Next(ThemeColor.Colorlist.Count);
+            }
+            tempIndex = index;
+            string color = ThemeColor.Colorlist[index];
+            return ColorTranslator.FromHtml(color);
+        }
+        private void ActiveButton(object btnSender)
+        {
+            if (btnSender != null)
+            {
+                if (currentButton != (Button)btnSender)
+                {
+                    DisableButton();
+                    Color color = SelectThemeColor();
+                    currentButton = (Button)btnSender;
+                    currentButton.BackColor = color;
+                    currentButton.ForeColor = Color.White;
+                    currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
+                }
+            }
+
+        }
+        private void DisableButton()
+        {
+            foreach (Control previousBtn in panelMenu.Controls)
+            {
+                if (previousBtn.GetType() == typeof(Button))
+                {
+                    previousBtn.BackColor = Color.FromArgb(51, 51, 76);
+                    previousBtn.ForeColor = Color.Gainsboro;
+                    previousBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    
+                }
+            }
+        }
+
+        private void btnBeranda_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAnggota_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnTRN_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLPR_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPengaturan_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAkun_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
