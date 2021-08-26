@@ -18,3 +18,8 @@ C:\Users\hizak\Documents\ProjectShoukanshi\ProjectShoukanshi\ProjectShoukanshi\o
 C:\Users\hizak\Documents\ProjectShoukanshi\ProjectShoukanshi\ProjectShoukanshi\obj\Debug\ProjectShoukanshi.csprojResolveAssemblyReference.cache
 C:\Users\hizak\Documents\ProjectShoukanshi\ProjectShoukanshi\ProjectShoukanshi\obj\Debug\ProjectShoukanshi.LoginForm.resources
 C:\Users\hizak\Documents\ProjectShoukanshi\ProjectShoukanshi\ProjectShoukanshi\obj\Debug\ProjectShoukanshi.MainUser.resources
+C:\Users\hizak\Documents\ProjectShoukanshi\ProjectShoukanshi\ProjectShoukanshi\obj\Debug\ProjectShoukanshi.Forms.FormDataAkun.resources
+C:\Users\hizak\Documents\ProjectShoukanshi\ProjectShoukanshi\ProjectShoukanshi\obj\Debug\ProjectShoukanshi.Forms.FormDataAnggota.resources
+C:\Users\hizak\Documents\ProjectShoukanshi\ProjectShoukanshi\ProjectShoukanshi\obj\Debug\ProjectShoukanshi.Forms.FormLaporanTransaksi.resources
+C:\Users\hizak\Documents\ProjectShoukanshi\ProjectShoukanshi\ProjectShoukanshi\obj\Debug\ProjectShoukanshi.Forms.FormPengaturan.resources
+C:\Users\hizak\Documents\ProjectShoukanshi\ProjectShoukanshi\ProjectShoukanshi\obj\Debug\ProjectShoukanshi.Forms.FormTransaksi.resources

@@ -51,6 +51,36 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormsAdmin\FormDataAkun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsAdmin\FormDataAkun.Designer.cs">
+      <DependentUpon>FormDataAkun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsAdmin\FormDataAnggota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsAdmin\FormDataAnggota.Designer.cs">
+      <DependentUpon>FormDataAnggota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsAdmin\FormLaporanTransaksi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsAdmin\FormLaporanTransaksi.Designer.cs">
+      <DependentUpon>FormLaporanTransaksi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsAdmin\FormPengaturan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsAdmin\FormPengaturan.Designer.cs">
+      <DependentUpon>FormPengaturan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsAdmin\FormTransaksi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsAdmin\FormTransaksi.Designer.cs">
+      <DependentUpon>FormTransaksi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +98,21 @@
     <Compile Include="ThemeColor.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsAdmin\FormDataAkun.resx">
+      <DependentUpon>FormDataAkun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsAdmin\FormDataAnggota.resx">
+      <DependentUpon>FormDataAnggota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsAdmin\FormLaporanTransaksi.resx">
+      <DependentUpon>FormLaporanTransaksi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsAdmin\FormPengaturan.resx">
+      <DependentUpon>FormPengaturan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsAdmin\FormTransaksi.resx">
+      <DependentUpon>FormTransaksi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
@@ -122,6 +167,7 @@
   <ItemGroup>
     <None Include="Resources\Pengaturan_24x24.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
