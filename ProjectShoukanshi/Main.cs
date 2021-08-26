@@ -21,6 +21,7 @@ namespace ProjectShoukanshi
         public Main()
         {
             InitializeComponent();
+            random = new Random();
         }
 
         //Methods
@@ -29,7 +30,7 @@ namespace ProjectShoukanshi
             int index = random.Next(ThemeColor.Colorlist.Count);
             while (tempIndex == index)
             {
-                random.Next(ThemeColor.Colorlist.Count);
+               index = random.Next(ThemeColor.Colorlist.Count);
             }
             tempIndex = index;
             string color = ThemeColor.Colorlist[index];
@@ -46,8 +47,9 @@ namespace ProjectShoukanshi
                     currentButton = (Button)btnSender;
                     currentButton.BackColor = color;
                     currentButton.ForeColor = Color.White;
-                    currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-
+                    currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    panelTitleBar.BackColor = color;
+                    panelLogo.BackColor = ThemeColor.ChangeColorBrightness(color, -0.2);
                 }
             }
 
@@ -60,7 +62,7 @@ namespace ProjectShoukanshi
                 {
                     previousBtn.BackColor = Color.FromArgb(51, 51, 76);
                     previousBtn.ForeColor = Color.Gainsboro;
-                    previousBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    previousBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                     
                 }
             }
@@ -68,33 +70,47 @@ namespace ProjectShoukanshi
 
         private void btnBeranda_Click(object sender, EventArgs e)
         {
-
+            ActiveButton(sender);
         }
 
         private void btnAnggota_Click(object sender, EventArgs e)
         {
-
+            ActiveButton(sender);
         }
 
         private void btnTRN_Click(object sender, EventArgs e)
         {
-
+            ActiveButton(sender);
         }
 
         private void btnLPR_Click(object sender, EventArgs e)
         {
-
+            ActiveButton(sender);
         }
 
         private void btnPengaturan_Click(object sender, EventArgs e)
         {
-
+            ActiveButton(sender);
         }
 
         private void btnAkun_Click(object sender, EventArgs e)
         {
+            ActiveButton(sender);
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            LoginForm mn = new LoginForm();
+            mn.Show();
+        }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
 
         }
+
+      
 
     }
 }

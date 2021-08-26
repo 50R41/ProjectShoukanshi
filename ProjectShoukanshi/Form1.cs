@@ -12,9 +12,9 @@ using System.Configuration;
 
 namespace ProjectShoukanshi
 {
-    public partial class Form1 : Form
+    public partial class LoginForm : Form
     {
-        public Form1()
+        public LoginForm()
         {
             InitializeComponent();
         }
@@ -58,8 +58,10 @@ namespace ProjectShoukanshi
                             sc.Show();
                             this.Hide();
                         }
-
+                        else
+                            MessageBox.Show("Invalid username or password");
                     }
+                    
                 }
             }
             else
@@ -93,12 +95,14 @@ namespace ProjectShoukanshi
 
         private void btnEXIT_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void LoginForm_Load(object sender, EventArgs e)
         {
-            
+
         }
+
+       
     }
 }

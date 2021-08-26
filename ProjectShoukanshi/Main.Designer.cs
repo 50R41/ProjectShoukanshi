@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.panelLogo = new System.Windows.Forms.Panel();
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnAkun = new System.Windows.Forms.Button();
             this.btnPengaturan = new System.Windows.Forms.Button();
@@ -37,7 +36,13 @@
             this.btnTRN = new System.Windows.Forms.Button();
             this.btnAnggota = new System.Windows.Forms.Button();
             this.btnBeranda = new System.Windows.Forms.Button();
+            this.panelLogo = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panelTitleBar = new System.Windows.Forms.Panel();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
+            this.panelLogo.SuspendLayout();
+            this.panelTitleBar.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -57,15 +62,6 @@
             this.panelMenu.Size = new System.Drawing.Size(158, 510);
             this.panelMenu.TabIndex = 0;
             // 
-            // panelLogo
-            // 
-            this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
-            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(158, 68);
-            this.panelLogo.TabIndex = 0;
-            // 
             // btnLogout
             // 
             this.btnLogout.Dock = System.Windows.Forms.DockStyle.Top;
@@ -84,12 +80,14 @@
             this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // btnAkun
             // 
             this.btnAkun.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnAkun.FlatAppearance.BorderSize = 0;
             this.btnAkun.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAkun.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAkun.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnAkun.Image = global::ProjectShoukanshi.Properties.Resources.Tak_berjudul26_20210825192222_24x24;
             this.btnAkun.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -109,6 +107,7 @@
             this.btnPengaturan.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnPengaturan.FlatAppearance.BorderSize = 0;
             this.btnPengaturan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPengaturan.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPengaturan.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnPengaturan.Image = global::ProjectShoukanshi.Properties.Resources.Pengaturan_24x24;
             this.btnPengaturan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -128,6 +127,7 @@
             this.btnLPR.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnLPR.FlatAppearance.BorderSize = 0;
             this.btnLPR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLPR.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLPR.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnLPR.Image = global::ProjectShoukanshi.Properties.Resources.Laporan_Transaksi_24x24;
             this.btnLPR.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -147,6 +147,7 @@
             this.btnTRN.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnTRN.FlatAppearance.BorderSize = 0;
             this.btnTRN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTRN.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTRN.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnTRN.Image = global::ProjectShoukanshi.Properties.Resources.Transaksi_24x24;
             this.btnTRN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -166,6 +167,7 @@
             this.btnAnggota.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnAnggota.FlatAppearance.BorderSize = 0;
             this.btnAnggota.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnggota.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAnggota.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnAnggota.Image = global::ProjectShoukanshi.Properties.Resources.Data_Anggota_24x24;
             this.btnAnggota.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -200,15 +202,64 @@
             this.btnBeranda.UseVisualStyleBackColor = true;
             this.btnBeranda.Click += new System.EventHandler(this.btnBeranda_Click);
             // 
+            // panelLogo
+            // 
+            this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.panelLogo.Controls.Add(this.label1);
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(158, 68);
+            this.panelLogo.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.LightGray;
+            this.label1.Location = new System.Drawing.Point(51, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(53, 16);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "TASIS";
+            // 
+            // panelTitleBar
+            // 
+            this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
+            this.panelTitleBar.Controls.Add(this.lblTitle);
+            this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitleBar.Location = new System.Drawing.Point(158, 0);
+            this.panelTitleBar.Name = "panelTitleBar";
+            this.panelTitleBar.Size = new System.Drawing.Size(528, 68);
+            this.panelTitleBar.TabIndex = 1;
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
+            this.lblTitle.Location = new System.Drawing.Point(225, 25);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(88, 16);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "BERANDA";
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(582, 510);
+            this.ClientSize = new System.Drawing.Size(686, 510);
+            this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
             this.Name = "Main";
             this.Text = "Main";
+            this.Load += new System.EventHandler(this.Main_Load);
             this.panelMenu.ResumeLayout(false);
+            this.panelLogo.ResumeLayout(false);
+            this.panelLogo.PerformLayout();
+            this.panelTitleBar.ResumeLayout(false);
+            this.panelTitleBar.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -224,6 +275,9 @@
         private System.Windows.Forms.Button btnTRN;
         private System.Windows.Forms.Button btnAnggota;
         private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Panel panelTitleBar;
+        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Label label1;
 
 
     }
