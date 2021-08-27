@@ -133,6 +133,26 @@ namespace ProjectShoukanshi.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Tak_berjudul28_20210827202129 {
+            get {
+                object obj = ResourceManager.GetObject("Tak berjudul28_20210827202129", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tak_berjudul28_202108272021291 {
+            get {
+                object obj = ResourceManager.GetObject("Tak berjudul28_202108272021291", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Transaksi_24x24 {
             get {
                 object obj = ResourceManager.GetObject("Transaksi_24x24", resourceCulture);
