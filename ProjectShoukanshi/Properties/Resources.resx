@@ -136,6 +136,9 @@
   <data name="Data_Anggota_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Data_Anggota_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Tak_berjudul29_20210828145807_1_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tak_berjudul29_20210828145807_1_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Data Anggota" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Data Anggota.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -147,5 +150,8 @@
   </data>
   <data name="Tak berjudul28_202108272021291" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tak berjudul28_202108272021291.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tak_berjudul28_20210827202129_12x12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tak_berjudul28_20210827202129_12x12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

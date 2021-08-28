@@ -21,7 +21,7 @@ C:\Users\hizak\Documents\ProjectShoukanshi\ProjectShoukanshi\ProjectShoukanshi\o
 C:\Users\hizak\Documents\ProjectShoukanshi\ProjectShoukanshi\ProjectShoukanshi\obj\Debug\ProjectShoukanshi.Forms.FormDataAkun.resources
 C:\Users\hizak\Documents\ProjectShoukanshi\ProjectShoukanshi\ProjectShoukanshi\obj\Debug\ProjectShoukanshi.Forms.FormDataAnggota.resources
 C:\Users\hizak\Documents\ProjectShoukanshi\ProjectShoukanshi\ProjectShoukanshi\obj\Debug\ProjectShoukanshi.Forms.FormLaporanTransaksi.resources
-C:\Users\hizak\Documents\ProjectShoukanshi\ProjectShoukanshi\ProjectShoukanshi\obj\Debug\ProjectShoukanshi.Forms.FormPengaturan.resources
-C:\Users\hizak\Documents\ProjectShoukanshi\ProjectShoukanshi\ProjectShoukanshi\obj\Debug\ProjectShoukanshi.Forms.FormTransaksi.resources
-C:\Users\hizak\Documents\ProjectShoukanshi\ProjectShoukanshi\ProjectShoukanshi\obj\Debug\ProjectShoukanshi.FormUser.FormDataAnggota01.resources
-C:\Users\hizak\Documents\ProjectShoukanshi\ProjectShoukanshi\ProjectShoukanshi\obj\Debug\ProjectShoukanshi.FormUser.FormLaporanTransaksi01.resources
+C:\Users\hizak\Documents\ProjectShoukanshi\ProjectShoukanshi\ProjectShoukanshi\obj\Debug\ProjectShoukanshi.FormUser.FormTabungan.resources
+C:\Users\hizak\Documents\ProjectShoukanshi\ProjectShoukanshi\ProjectShoukanshi\obj\Debug\ProjectShoukanshi.InsideForm.FormTambah.resources
+C:\Users\hizak\Documents\ProjectShoukanshi\ProjectShoukanshi\ProjectShoukanshi\obj\Debug\ProjectShoukanshi.InsideForm.Penarikan.resources
+C:\Users\hizak\Documents\ProjectShoukanshi\ProjectShoukanshi\ProjectShoukanshi\obj\Debug\ProjectShoukanshi.InsideForm.Setoran.resources

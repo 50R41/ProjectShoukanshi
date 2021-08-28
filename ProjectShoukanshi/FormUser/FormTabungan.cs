@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProjectShoukanshi.FormUser
 {
-    public partial class FormLaporanTransaksi01 : Form
+    public partial class FormTabungan : Form
     {
-        public FormLaporanTransaksi01()
+        public FormTabungan()
         {
             InitializeComponent();
         }

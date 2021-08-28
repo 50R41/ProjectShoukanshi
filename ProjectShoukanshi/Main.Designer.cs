@@ -31,10 +31,8 @@
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnAkun = new System.Windows.Forms.Button();
-            this.btnPengaturan = new System.Windows.Forms.Button();
-            this.btnLPR = new System.Windows.Forms.Button();
-            this.btnTRN = new System.Windows.Forms.Button();
-            this.btnAnggota = new System.Windows.Forms.Button();
+            this.btnTabungan = new System.Windows.Forms.Button();
+            this.btnSiswa = new System.Windows.Forms.Button();
             this.btnBeranda = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -53,10 +51,8 @@
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.panelMenu.Controls.Add(this.btnLogout);
             this.panelMenu.Controls.Add(this.btnAkun);
-            this.panelMenu.Controls.Add(this.btnPengaturan);
-            this.panelMenu.Controls.Add(this.btnLPR);
-            this.panelMenu.Controls.Add(this.btnTRN);
-            this.panelMenu.Controls.Add(this.btnAnggota);
+            this.panelMenu.Controls.Add(this.btnTabungan);
+            this.panelMenu.Controls.Add(this.btnSiswa);
             this.panelMenu.Controls.Add(this.btnBeranda);
             this.panelMenu.Controls.Add(this.panelLogo);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
@@ -74,7 +70,7 @@
             this.btnLogout.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnLogout.Image = global::ProjectShoukanshi.Properties.Resources.Tak_berjudul27_20210825201208_24x24;
             this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogout.Location = new System.Drawing.Point(0, 428);
+            this.btnLogout.Location = new System.Drawing.Point(0, 308);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.btnLogout.Size = new System.Drawing.Size(158, 60);
@@ -94,96 +90,56 @@
             this.btnAkun.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnAkun.Image = global::ProjectShoukanshi.Properties.Resources.Tak_berjudul26_20210825192222_24x24;
             this.btnAkun.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAkun.Location = new System.Drawing.Point(0, 368);
+            this.btnAkun.Location = new System.Drawing.Point(0, 248);
             this.btnAkun.Name = "btnAkun";
             this.btnAkun.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.btnAkun.Size = new System.Drawing.Size(158, 60);
             this.btnAkun.TabIndex = 6;
-            this.btnAkun.Text = "  Data AKun";
+            this.btnAkun.Text = "  Akun";
             this.btnAkun.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAkun.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAkun.UseVisualStyleBackColor = true;
             this.btnAkun.Click += new System.EventHandler(this.btnAkun_Click);
             // 
-            // btnPengaturan
+            // btnTabungan
             // 
-            this.btnPengaturan.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnPengaturan.FlatAppearance.BorderSize = 0;
-            this.btnPengaturan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPengaturan.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPengaturan.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnPengaturan.Image = global::ProjectShoukanshi.Properties.Resources.Pengaturan_24x24;
-            this.btnPengaturan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPengaturan.Location = new System.Drawing.Point(0, 308);
-            this.btnPengaturan.Name = "btnPengaturan";
-            this.btnPengaturan.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnPengaturan.Size = new System.Drawing.Size(158, 60);
-            this.btnPengaturan.TabIndex = 5;
-            this.btnPengaturan.Text = "  Pengaturan";
-            this.btnPengaturan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPengaturan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnPengaturan.UseVisualStyleBackColor = true;
-            this.btnPengaturan.Click += new System.EventHandler(this.btnPengaturan_Click);
+            this.btnTabungan.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTabungan.FlatAppearance.BorderSize = 0;
+            this.btnTabungan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTabungan.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTabungan.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnTabungan.Image = global::ProjectShoukanshi.Properties.Resources.Data_Anggota_24x24;
+            this.btnTabungan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTabungan.Location = new System.Drawing.Point(0, 188);
+            this.btnTabungan.Name = "btnTabungan";
+            this.btnTabungan.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.btnTabungan.Size = new System.Drawing.Size(158, 60);
+            this.btnTabungan.TabIndex = 4;
+            this.btnTabungan.Text = "Tabungan";
+            this.btnTabungan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTabungan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnTabungan.UseVisualStyleBackColor = true;
+            this.btnTabungan.Click += new System.EventHandler(this.btnLPR_Click);
             // 
-            // btnLPR
+            // btnSiswa
             // 
-            this.btnLPR.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnLPR.FlatAppearance.BorderSize = 0;
-            this.btnLPR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLPR.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLPR.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnLPR.Image = global::ProjectShoukanshi.Properties.Resources.Laporan_Transaksi_24x24;
-            this.btnLPR.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLPR.Location = new System.Drawing.Point(0, 248);
-            this.btnLPR.Name = "btnLPR";
-            this.btnLPR.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnLPR.Size = new System.Drawing.Size(158, 60);
-            this.btnLPR.TabIndex = 4;
-            this.btnLPR.Text = "  Laporan Transaksi";
-            this.btnLPR.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLPR.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLPR.UseVisualStyleBackColor = true;
-            this.btnLPR.Click += new System.EventHandler(this.btnLPR_Click);
-            // 
-            // btnTRN
-            // 
-            this.btnTRN.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnTRN.FlatAppearance.BorderSize = 0;
-            this.btnTRN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTRN.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTRN.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnTRN.Image = global::ProjectShoukanshi.Properties.Resources.Transaksi_24x24;
-            this.btnTRN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTRN.Location = new System.Drawing.Point(0, 188);
-            this.btnTRN.Name = "btnTRN";
-            this.btnTRN.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnTRN.Size = new System.Drawing.Size(158, 60);
-            this.btnTRN.TabIndex = 3;
-            this.btnTRN.Text = "  Transaksi";
-            this.btnTRN.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTRN.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnTRN.UseVisualStyleBackColor = true;
-            this.btnTRN.Click += new System.EventHandler(this.btnTRN_Click);
-            // 
-            // btnAnggota
-            // 
-            this.btnAnggota.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAnggota.FlatAppearance.BorderSize = 0;
-            this.btnAnggota.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAnggota.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnggota.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnAnggota.Image = global::ProjectShoukanshi.Properties.Resources.Data_Anggota_24x24;
-            this.btnAnggota.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAnggota.Location = new System.Drawing.Point(0, 128);
-            this.btnAnggota.Name = "btnAnggota";
-            this.btnAnggota.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnAnggota.Size = new System.Drawing.Size(158, 60);
-            this.btnAnggota.TabIndex = 2;
-            this.btnAnggota.Text = "  Data Anggota";
-            this.btnAnggota.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAnggota.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAnggota.UseVisualStyleBackColor = true;
-            this.btnAnggota.Click += new System.EventHandler(this.btnAnggota_Click);
+            this.btnSiswa.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSiswa.FlatAppearance.BorderSize = 0;
+            this.btnSiswa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSiswa.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSiswa.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnSiswa.Image = global::ProjectShoukanshi.Properties.Resources.Tak_berjudul29_20210828145807_1_24x24;
+            this.btnSiswa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSiswa.Location = new System.Drawing.Point(0, 128);
+            this.btnSiswa.Name = "btnSiswa";
+            this.btnSiswa.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.btnSiswa.Size = new System.Drawing.Size(158, 60);
+            this.btnSiswa.TabIndex = 2;
+            this.btnSiswa.Text = "  Data Siswa";
+            this.btnSiswa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSiswa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSiswa.UseVisualStyleBackColor = true;
+            this.btnSiswa.Click += new System.EventHandler(this.btnAnggota_Click);
             // 
             // btnBeranda
             // 
@@ -275,7 +231,7 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(225, 25);
+            this.lblTitle.Location = new System.Drawing.Point(227, 25);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(88, 16);
             this.lblTitle.TabIndex = 0;
@@ -297,6 +253,7 @@
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main";
@@ -316,10 +273,8 @@
         private System.Windows.Forms.Button btnBeranda;
         private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.Button btnAkun;
-        private System.Windows.Forms.Button btnPengaturan;
-        private System.Windows.Forms.Button btnLPR;
-        private System.Windows.Forms.Button btnTRN;
-        private System.Windows.Forms.Button btnAnggota;
+        private System.Windows.Forms.Button btnTabungan;
+        private System.Windows.Forms.Button btnSiswa;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Panel panelTitleBar;
         private System.Windows.Forms.Label lblTitle;

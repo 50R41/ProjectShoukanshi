@@ -1,6 +1,6 @@
-﻿namespace ProjectShoukanshi.FormUser
+﻿namespace ProjectShoukanshi.Forms
 {
-    partial class FormLaporanTransaksi01
+    partial class FormDataAnggota
     {
         /// <summary>
         /// Required designer variable.
@@ -28,32 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnTambah = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // btnTambah
             // 
-            this.button1.Location = new System.Drawing.Point(100, 97);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnTambah.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTambah.Location = new System.Drawing.Point(-1, 12);
+            this.btnTambah.Name = "btnTambah";
+            this.btnTambah.Size = new System.Drawing.Size(75, 32);
+            this.btnTambah.TabIndex = 0;
+            this.btnTambah.Text = "Tambah";
+            this.btnTambah.UseVisualStyleBackColor = true;
+            this.btnTambah.Click += new System.EventHandler(this.button1_Click);
             // 
-            // FormLaporanTransaksi
+            // FormDataAnggota
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Controls.Add(this.button1);
-            this.Name = "FormLaporanTransaksi";
-            this.Text = "FormLaporanTransaksi";
+            this.ClientSize = new System.Drawing.Size(534, 331);
+            this.Controls.Add(this.btnTambah);
+            this.Name = "FormDataAnggota";
+            this.Text = "Data Siswa";
+            this.Load += new System.EventHandler(this.FormDataAnggota_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnTambah;
+
     }
 }

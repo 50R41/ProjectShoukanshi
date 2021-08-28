@@ -112,14 +112,9 @@ namespace ProjectShoukanshi
             lgn.Show();
         }
 
-        private void btnAnggota_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new FormUser.FormDataAnggota01(), sender);
-        }
-
         private void btnLPR_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FormUser.FormLaporanTransaksi01(), sender);
+            OpenChildForm(new FormUser.FormTabungan(), sender);
         }
 
         private void panelTitleBar_MouseDown(object sender, MouseEventArgs e)

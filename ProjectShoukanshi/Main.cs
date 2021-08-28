@@ -117,19 +117,9 @@ namespace ProjectShoukanshi
             OpenChildForm(new Forms.FormDataAnggota(), sender);
         }
 
-        private void btnTRN_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new Forms.FormTransaksi(), sender);
-        }
-
         private void btnLPR_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FormTransaksi(), sender);
-        }
-
-        private void btnPengaturan_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new Forms.FormPengaturan(), sender);
+            OpenChildForm(new Forms.FormLaporanTransaksi(), sender);
         }
 
         private void btnAkun_Click(object sender, EventArgs e)

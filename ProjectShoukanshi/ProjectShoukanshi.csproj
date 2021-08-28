@@ -45,53 +45,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InsideForm\Penarikan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsideForm\Penarikan.Designer.cs">
+      <DependentUpon>Penarikan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsideForm\Setoran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsideForm\Setoran.Designer.cs">
+      <DependentUpon>Setoran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsideForm\TambahSiswa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsideForm\TambahSiswa.Designer.cs">
+      <DependentUpon>TambahSiswa.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginPage.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LoginPage.Designer.cs">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormsAdmin\FormDataAkun.cs">
+    <Compile Include="FormsAdmin\FormAkun.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormsAdmin\FormDataAkun.Designer.cs">
-      <DependentUpon>FormDataAkun.cs</DependentUpon>
+    <Compile Include="FormsAdmin\FormAkun.Designer.cs">
+      <DependentUpon>FormAkun.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormsAdmin\FormDataAnggota.cs">
+    <Compile Include="FormsAdmin\FormDataSiswa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormsAdmin\FormDataAnggota.Designer.cs">
-      <DependentUpon>FormDataAnggota.cs</DependentUpon>
+    <Compile Include="FormsAdmin\FormDataSiswa.Designer.cs">
+      <DependentUpon>FormDataSiswa.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormsAdmin\FormLaporanTransaksi.cs">
+    <Compile Include="FormsAdmin\FormTabungan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormsAdmin\FormLaporanTransaksi.Designer.cs">
-      <DependentUpon>FormLaporanTransaksi.cs</DependentUpon>
+    <Compile Include="FormsAdmin\FormTabungan.Designer.cs">
+      <DependentUpon>FormTabungan.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormsAdmin\FormPengaturan.cs">
+    <Compile Include="FormUser\FormTabungan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormsAdmin\FormPengaturan.Designer.cs">
-      <DependentUpon>FormPengaturan.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormsAdmin\FormTransaksi.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormsAdmin\FormTransaksi.Designer.cs">
-      <DependentUpon>FormTransaksi.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormUser\FormDataAnggota01.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormUser\FormDataAnggota01.Designer.cs">
-      <DependentUpon>FormDataAnggota01.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormUser\FormLaporanTransaksi01.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormUser\FormLaporanTransaksi01.Designer.cs">
-      <DependentUpon>FormLaporanTransaksi01.cs</DependentUpon>
+    <Compile Include="FormUser\FormTabungan.Designer.cs">
+      <DependentUpon>FormTabungan.cs</DependentUpon>
     </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
@@ -108,29 +108,29 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThemeColor.cs" />
+    <EmbeddedResource Include="InsideForm\Penarikan.resx">
+      <DependentUpon>Penarikan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsideForm\Setoran.resx">
+      <DependentUpon>Setoran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsideForm\TambahSiswa.resx">
+      <DependentUpon>TambahSiswa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormsAdmin\FormDataAkun.resx">
-      <DependentUpon>FormDataAkun.cs</DependentUpon>
+    <EmbeddedResource Include="FormsAdmin\FormAkun.resx">
+      <DependentUpon>FormAkun.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormsAdmin\FormDataAnggota.resx">
-      <DependentUpon>FormDataAnggota.cs</DependentUpon>
+    <EmbeddedResource Include="FormsAdmin\FormDataSiswa.resx">
+      <DependentUpon>FormDataSiswa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormsAdmin\FormLaporanTransaksi.resx">
-      <DependentUpon>FormLaporanTransaksi.cs</DependentUpon>
+    <EmbeddedResource Include="FormsAdmin\FormTabungan.resx">
+      <DependentUpon>FormTabungan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormsAdmin\FormPengaturan.resx">
-      <DependentUpon>FormPengaturan.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormsAdmin\FormTransaksi.resx">
-      <DependentUpon>FormTransaksi.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormUser\FormDataAnggota01.resx">
-      <DependentUpon>FormDataAnggota01.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormUser\FormLaporanTransaksi01.resx">
-      <DependentUpon>FormLaporanTransaksi01.cs</DependentUpon>
+    <EmbeddedResource Include="FormUser\FormTabungan.resx">
+      <DependentUpon>FormTabungan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
@@ -190,6 +190,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Tak berjudul28_202108272021291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tak_berjudul29_20210828145807_1_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tak_berjudul28_20210827202129_12x12.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
