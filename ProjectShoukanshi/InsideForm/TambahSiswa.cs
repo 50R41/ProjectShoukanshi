@@ -9,7 +9,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
-using System.Data.SqlClient;
 using System.Configuration;
 
 namespace ProjectShoukanshi.InsideForm
@@ -47,11 +46,11 @@ namespace ProjectShoukanshi.InsideForm
 
         private void btnSimpan_Click(object sender, EventArgs e)
         {
-            string constring = @"Data Source=DESKTOP-NTD0N2N\PROJECTAIDEN01;Initial Catalog=DataShoukan;Integrated Security=True";
+            string constring = @"Data Source=localhost;port=3306;username=root;password=;database=db_tabungan";
             string Query = "insert into Siswa (NIK, nama, kelas, jenis_kelamin, tempat_lahir, tanggal_lahir, alamat_lengkap) values('" + this.textNIK.Text + "' , '" + this.textNama.Text + "' , '" + this.textKelas.Text + "' , '" + JenisKelamin + "' , '" + this.textTempat.Text + "' , '" + dateTanggal.Value.Date.ToString("yyyyMMdd") + "' , '" + this.textAlamat.Text + "');  ";
-            SqlConnection conDatabase = new SqlConnection(constring);
-            SqlCommand cmd = new SqlCommand(Query, conDatabase);
-            SqlDataReader myReader;
+            MySqlConnection conDatabase = new MySqlConnection(constring);
+            MySqlCommand cmd = new MySqlCommand(Query, conDatabase);
+            MySqlDataReader myReader;
             try
             {
                 conDatabase.Open();
@@ -73,7 +72,7 @@ namespace ProjectShoukanshi.InsideForm
 
         private void radioLaki_CheckedChanged(object sender, EventArgs e)
         {
-         JenisKelamin="Laki-laki";
+          JenisKelamin="Laki-laki";
         }
 
         private void radioPerempuan_CheckedChanged(object sender, EventArgs e)

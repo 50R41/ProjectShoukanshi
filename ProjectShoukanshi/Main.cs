@@ -26,7 +26,7 @@ namespace ProjectShoukanshi
             random = new Random();
             this.Text = string.Empty;
             this.ControlBox = false;
-            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+            btnCloseChildForm.Visible = false;
             
         }
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -62,6 +62,7 @@ namespace ProjectShoukanshi
                     panelLogo.BackColor = ThemeColor.ChangeColorBrightness(color, -0.2);
                     ThemeColor.PrimaryColor = color;
                     ThemeColor.SecondaryColor = ThemeColor.ChangeColorBrightness(color, -0.2);
+                    btnCloseChildForm.Visible = true;
                 }
             }
 
@@ -75,7 +76,7 @@ namespace ProjectShoukanshi
                     previousBtn.BackColor = Color.FromArgb(51, 51, 76);
                     previousBtn.ForeColor = Color.Gainsboro;
                     previousBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-                    
+                    btnCloseChildForm.Visible = false;
                 }
             }
         }
@@ -94,13 +95,6 @@ namespace ProjectShoukanshi
             childForm.BringToFront();
             childForm.Show();
             lblTitle.Text = childForm.Text;
-        }
-
-        private void btnBeranda_Click(object sender, EventArgs e)
-        {
-            if (activeForm != null)
-                activeForm.Close();
-            Reset();
         }
 
         private void Reset()
@@ -144,18 +138,16 @@ namespace ProjectShoukanshi
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
-
-        private void btnMaximize_Click(object sender, EventArgs e)
-        {
-            if (WindowState == FormWindowState.Normal)
-                this.WindowState = FormWindowState.Maximized;
-            else
-                this.WindowState = FormWindowState.Normal;
-        }
-
         private void btnMinimize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnCloseChildForm_Click(object sender, EventArgs e)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            Reset();
         }
 
       

@@ -24,7 +24,6 @@ namespace ProjectShoukanshi
             random = new Random();
             this.Text = string.Empty;
             this.ControlBox = false;
-            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             btnCloseChildForm.Visible = false;
 
         }
@@ -134,16 +133,6 @@ namespace ProjectShoukanshi
         {
             this.WindowState = FormWindowState.Minimized;
         }
-
-        private void btnMaximize_Click_1(object sender, EventArgs e)
-        {
-            if (WindowState == FormWindowState.Normal)
-                this.WindowState = FormWindowState.Maximized;
-            else
-                this.WindowState = FormWindowState.Normal;
-        }
-
-       
 
     }
 }

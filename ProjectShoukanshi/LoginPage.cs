@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 using System.Configuration;
 
 namespace ProjectShoukanshi
@@ -17,8 +17,8 @@ namespace ProjectShoukanshi
         public LoginForm()
         {
             InitializeComponent();
-        }
-
+           
+        }     
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
@@ -27,9 +27,11 @@ namespace ProjectShoukanshi
        
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-NTD0N2N\PROJECTAIDEN01;Initial Catalog=DataShoukan;Integrated Security=True");
-            SqlCommand cmd = new SqlCommand("Select * From Login where username='" + txtUSER.Text + "' and password='" + txtPASS.Text + "'", con);
-            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            string myConnection = "Data Source=localhost;port=3306;username=root;password=;database=db_tabungan";
+            string Query = "Select * From login where username='" + txtUSER.Text + "' and password='" + txtPASS.Text + "' and Usertype='"+ comboBox1.Text +"'";
+            MySqlConnection con = new MySqlConnection(myConnection);
+            MySqlCommand cmd = new MySqlCommand(Query, con);
+            MySqlDataAdapter sda = new MySqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             sda.Fill(dt);
             if (comboBox1.SelectedIndex == -1)
@@ -37,15 +39,10 @@ namespace ProjectShoukanshi
                 MessageBox.Show("Please select usertype");
                 return;
             }
-            string cmdItemValue = comboBox1.SelectedItem.ToString();
+           
             if (dt.Rows.Count > 0)
             {
-                
-                for (int i = 0; i < dt.Rows.Count; i++)
-                {
-                    if (dt.Rows[i]["UserType"].ToString() == cmdItemValue)
-                    {
-                        MessageBox.Show("you are login as " + dt.Rows[i][2]);
+                 MessageBox.Show("you are login as " + comboBox1.Text );
                         if (comboBox1.SelectedIndex == 0)
                         {
                             Main ss = new Main();
@@ -58,12 +55,10 @@ namespace ProjectShoukanshi
                             sc.Show();
                             this.Hide();
                         }
-                        else
-                            MessageBox.Show("Invalid username or password");
-                    }
-                    
+                    else
+                        MessageBox.Show("Invalid username or password");
                 }
-            }
+            
             else
                 MessageBox.Show("Invalid username or password");
         }

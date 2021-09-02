@@ -25,3 +25,6 @@ C:\Users\hizak\Documents\ProjectShoukanshi\ProjectShoukanshi\ProjectShoukanshi\o
 C:\Users\hizak\Documents\ProjectShoukanshi\ProjectShoukanshi\ProjectShoukanshi\obj\Debug\ProjectShoukanshi.InsideForm.FormTambah.resources
 C:\Users\hizak\Documents\ProjectShoukanshi\ProjectShoukanshi\ProjectShoukanshi\obj\Debug\ProjectShoukanshi.InsideForm.Penarikan.resources
 C:\Users\hizak\Documents\ProjectShoukanshi\ProjectShoukanshi\ProjectShoukanshi\obj\Debug\ProjectShoukanshi.InsideForm.Setoran.resources
+C:\Users\hizak\Documents\ProjectShoukanshi\ProjectShoukanshi\ProjectShoukanshi\obj\Debug\ProjectShoukanshi.InsideForm.TambahAkun.resources
+C:\Users\hizak\Documents\ProjectShoukanshi\ProjectShoukanshi\ProjectShoukanshi\obj\Debug\ProjectShoukanshi.InsideForm.EditSiswa.resources
+C:\Users\hizak\Documents\ProjectShoukanshi\ProjectShoukanshi\ProjectShoukanshi\obj\Debug\ProjectShoukanshi.InsideForm.EditAkun.resources
