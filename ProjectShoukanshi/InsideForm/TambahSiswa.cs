@@ -46,8 +46,8 @@ namespace ProjectShoukanshi.InsideForm
 
         private void btnSimpan_Click(object sender, EventArgs e)
         {
-            string constring = @"Data Source=localhost;port=3306;username=root;password=;database=db_tabungan";
-            string Query = "insert into Siswa (NIK, nama, kelas, jenis_kelamin, tempat_lahir, tanggal_lahir, alamat_lengkap) values('" + this.textNIK.Text + "' , '" + this.textNama.Text + "' , '" + this.textKelas.Text + "' , '" + JenisKelamin + "' , '" + this.textTempat.Text + "' , '" + dateTanggal.Value.Date.ToString("yyyyMMdd") + "' , '" + this.textAlamat.Text + "');  ";
+            string constring = "Data Source=localhost;port=3306;username=root;password=;database=db_tabungan";
+            string Query = "insert into siswa (NIK, nama, kelas, jenis_kelamin, tempat_lahir, tanggal_lahir, alamat_lengkap) values('" + this.textNIK.Text + "' , '" + this.textNama.Text + "' , '" + this.textKelas.Text + "' , '" + JenisKelamin + "' , '" + this.textTempat.Text + "' , '" + dateTanggal.Value.Date.ToString("yyyyMMdd") + "' , '" + this.textAlamat.Text + "');  ";
             MySqlConnection conDatabase = new MySqlConnection(constring);
             MySqlCommand cmd = new MySqlCommand(Query, conDatabase);
             MySqlDataReader myReader;

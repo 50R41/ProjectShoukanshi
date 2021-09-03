@@ -28,14 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.textID = new System.Windows.Forms.TextBox();
-            this.siswaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataShoukanDataSet = new ProjectShoukanshi.DataShoukanDataSet();
             this.textNama = new System.Windows.Forms.TextBox();
             this.textSetoran = new System.Windows.Forms.TextBox();
             this.dateTanggal = new System.Windows.Forms.DateTimePicker();
@@ -45,9 +42,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.siswaTableAdapter = new ProjectShoukanshi.DataShoukanDataSetTableAdapters.SiswaTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.siswaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataShoukanDataSet)).BeginInit();
             this.panelStrTitle.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -95,16 +89,6 @@
             this.textID.ReadOnly = true;
             this.textID.Size = new System.Drawing.Size(411, 27);
             this.textID.TabIndex = 4;
-            // 
-            // siswaBindingSource
-            // 
-            this.siswaBindingSource.DataMember = "Siswa";
-            this.siswaBindingSource.DataSource = this.dataShoukanDataSet;
-            // 
-            // dataShoukanDataSet
-            // 
-            this.dataShoukanDataSet.DataSetName = "DataShoukanDataSet";
-            this.dataShoukanDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // textNama
             // 
@@ -181,14 +165,13 @@
             // 
             // comboBox1
             // 
-            this.comboBox1.DataSource = this.siswaBindingSource;
-            this.comboBox1.DisplayMember = "nama";
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(100, 61);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(135, 21);
             this.comboBox1.TabIndex = 18;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label5
             // 
@@ -200,10 +183,6 @@
             this.label5.Size = new System.Drawing.Size(26, 13);
             this.label5.TabIndex = 19;
             this.label5.Text = "Pilih";
-            // 
-            // siswaTableAdapter
-            // 
-            this.siswaTableAdapter.ClearBeforeFill = true;
             // 
             // Setoran
             // 
@@ -228,8 +207,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Setoran";
             this.Load += new System.EventHandler(this.Setoran_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.siswaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataShoukanDataSet)).EndInit();
             this.panelStrTitle.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -252,8 +229,5 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label5;
-        private DataShoukanDataSet dataShoukanDataSet;
-        private System.Windows.Forms.BindingSource siswaBindingSource;
-        private DataShoukanDataSetTableAdapters.SiswaTableAdapter siswaTableAdapter;
     }
 }

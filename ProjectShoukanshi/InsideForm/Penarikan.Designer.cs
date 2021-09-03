@@ -32,10 +32,10 @@
             this.btnSimpan = new System.Windows.Forms.Button();
             this.panelPnkTitle = new System.Windows.Forms.Panel();
             this.btnMinimize = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dateTanggal = new System.Windows.Forms.DateTimePicker();
+            this.textPenarikan = new System.Windows.Forms.TextBox();
+            this.textNama = new System.Windows.Forms.TextBox();
+            this.textID = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -66,6 +66,7 @@
             this.btnSimpan.TabIndex = 27;
             this.btnSimpan.Text = "Simpan";
             this.btnSimpan.UseVisualStyleBackColor = false;
+            this.btnSimpan.Click += new System.EventHandler(this.btnSimpan_Click);
             // 
             // panelPnkTitle
             // 
@@ -93,36 +94,38 @@
             this.btnMinimize.UseVisualStyleBackColor = true;
             this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
-            // dateTimePicker1
+            // dateTanggal
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(116, 175);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(140, 20);
-            this.dateTimePicker1.TabIndex = 25;
+            this.dateTanggal.Location = new System.Drawing.Point(116, 175);
+            this.dateTanggal.Name = "dateTanggal";
+            this.dateTanggal.Size = new System.Drawing.Size(140, 20);
+            this.dateTanggal.TabIndex = 25;
             // 
-            // textBox4
+            // textPenarikan
             // 
-            this.textBox4.Location = new System.Drawing.Point(116, 217);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(411, 27);
-            this.textBox4.TabIndex = 24;
+            this.textPenarikan.Location = new System.Drawing.Point(116, 217);
+            this.textPenarikan.Multiline = true;
+            this.textPenarikan.Name = "textPenarikan";
+            this.textPenarikan.Size = new System.Drawing.Size(411, 27);
+            this.textPenarikan.TabIndex = 24;
             // 
-            // textBox2
+            // textNama
             // 
-            this.textBox2.Location = new System.Drawing.Point(116, 134);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(411, 27);
-            this.textBox2.TabIndex = 23;
+            this.textNama.Location = new System.Drawing.Point(116, 134);
+            this.textNama.Multiline = true;
+            this.textNama.Name = "textNama";
+            this.textNama.ReadOnly = true;
+            this.textNama.Size = new System.Drawing.Size(411, 27);
+            this.textNama.TabIndex = 23;
             // 
-            // textBox1
+            // textID
             // 
-            this.textBox1.Location = new System.Drawing.Point(116, 98);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(411, 27);
-            this.textBox1.TabIndex = 22;
+            this.textID.Location = new System.Drawing.Point(116, 98);
+            this.textID.Multiline = true;
+            this.textID.Name = "textID";
+            this.textID.ReadOnly = true;
+            this.textID.Size = new System.Drawing.Size(411, 27);
+            this.textID.TabIndex = 22;
             // 
             // label4
             // 
@@ -180,6 +183,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(135, 21);
             this.comboBox1.TabIndex = 29;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // Penarikan
             // 
@@ -191,10 +195,10 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnSimpan);
             this.Controls.Add(this.panelPnkTitle);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.dateTanggal);
+            this.Controls.Add(this.textPenarikan);
+            this.Controls.Add(this.textNama);
+            this.Controls.Add(this.textID);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -215,10 +219,10 @@
         private System.Windows.Forms.Button btnSimpan;
         private System.Windows.Forms.Panel panelPnkTitle;
         private System.Windows.Forms.Button btnMinimize;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DateTimePicker dateTanggal;
+        private System.Windows.Forms.TextBox textPenarikan;
+        private System.Windows.Forms.TextBox textNama;
+        private System.Windows.Forms.TextBox textID;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;

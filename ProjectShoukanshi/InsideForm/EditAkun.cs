@@ -91,7 +91,7 @@ namespace ProjectShoukanshi.InsideForm
 
         private void btnSimpan_Click(object sender, EventArgs e)
         {
-            string constring = @"Data Source=localhost;port=3306;username=root;password=;database=db_tabungan";
+            string constring = "Data Source=localhost;port=3306;username=root;password=;database=db_tabungan";
             string Query = "UPDATE login SET id_siswa='" + textID.Text + "' , username= '" + this.textUser.Text + "' , password=  '" + this.textPass.Text + "' , Usertype= '" + comboBox2.Text + "' WHERE id_siswa='" + textID.Text + "';";
             MySqlConnection conDatabase = new MySqlConnection(constring);
             MySqlCommand cmd = new MySqlCommand(Query, conDatabase);
