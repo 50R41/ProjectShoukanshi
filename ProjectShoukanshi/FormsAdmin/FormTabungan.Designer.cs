@@ -34,6 +34,7 @@
             this.textSearch = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnRefresh = new System.Windows.Forms.Button();
+            this.btnDetail = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,17 +94,30 @@
             this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRefresh.Location = new System.Drawing.Point(78, 75);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(59, 32);
+            this.btnRefresh.Size = new System.Drawing.Size(59, 30);
             this.btnRefresh.TabIndex = 11;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
+            // btnDetail
+            // 
+            this.btnDetail.BackColor = System.Drawing.SystemColors.Control;
+            this.btnDetail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDetail.Location = new System.Drawing.Point(92, 37);
+            this.btnDetail.Name = "btnDetail";
+            this.btnDetail.Size = new System.Drawing.Size(45, 30);
+            this.btnDetail.TabIndex = 12;
+            this.btnDetail.Text = "Detail";
+            this.btnDetail.UseVisualStyleBackColor = false;
+            this.btnDetail.Click += new System.EventHandler(this.btnDetail_Click);
             // 
             // FormLaporanTransaksi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(486, 334);
+            this.Controls.Add(this.btnDetail);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textSearch);
@@ -127,6 +141,7 @@
         private System.Windows.Forms.TextBox textSearch;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnRefresh;
+        private System.Windows.Forms.Button btnDetail;
 
     }
 }

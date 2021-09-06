@@ -26,7 +26,7 @@ namespace ProjectShoukanshi.Forms
         }
         void load_table()
         {
-            string Query = "Select id_tabungan, id_siswa, nama, SUM(saldo) as jumlah_saldo FROM tabungan GROUP BY id_siswa";
+            string Query = "Select id_siswa, nama, SUM(saldo) as jumlah_saldo FROM tabungan GROUP BY id_siswa";
             MySqlCommand cmd = new MySqlCommand(Query, con);
             MySqlDataAdapter sda = new MySqlDataAdapter();
             sda.SelectCommand = cmd;
@@ -78,7 +78,7 @@ namespace ProjectShoukanshi.Forms
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
-            string Query = "Select id_tabungan, id_siswa, nama, SUM(saldo) as jumlah_saldo FROM tabungan GROUP BY id_siswa";
+            string Query = "Select id_siswa, nama, SUM(saldo) as jumlah_saldo FROM tabungan GROUP BY id_siswa";
             MySqlCommand cmd = new MySqlCommand(Query, con);
             try
             {
@@ -98,6 +98,12 @@ namespace ProjectShoukanshi.Forms
 
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void btnDetail_Click(object sender, EventArgs e)
+        {
+            DetailTabungan DT = new DetailTabungan();
+            DT.ShowDialog();
         }
     }
 }

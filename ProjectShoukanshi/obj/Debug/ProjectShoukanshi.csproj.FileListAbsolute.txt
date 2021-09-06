@@ -28,3 +28,4 @@ C:\Users\hizak\Documents\ProjectShoukanshi\ProjectShoukanshi\ProjectShoukanshi\o
 C:\Users\hizak\Documents\ProjectShoukanshi\ProjectShoukanshi\ProjectShoukanshi\obj\Debug\ProjectShoukanshi.InsideForm.TambahAkun.resources
 C:\Users\hizak\Documents\ProjectShoukanshi\ProjectShoukanshi\ProjectShoukanshi\obj\Debug\ProjectShoukanshi.InsideForm.EditSiswa.resources
 C:\Users\hizak\Documents\ProjectShoukanshi\ProjectShoukanshi\ProjectShoukanshi\obj\Debug\ProjectShoukanshi.InsideForm.EditAkun.resources
+C:\Users\hizak\Documents\ProjectShoukanshi\ProjectShoukanshi\ProjectShoukanshi\obj\Debug\ProjectShoukanshi.InsideForm.DetailTabungan.resources

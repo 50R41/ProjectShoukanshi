@@ -48,6 +48,7 @@ namespace ProjectShoukanshi.InsideForm
         {
             string constring = "Data Source=localhost;port=3306;username=root;password=;database=db_tabungan";
             string Query = "insert into siswa (NIK, nama, kelas, jenis_kelamin, tempat_lahir, tanggal_lahir, alamat_lengkap) values('" + this.textNIK.Text + "' , '" + this.textNama.Text + "' , '" + this.textKelas.Text + "' , '" + JenisKelamin + "' , '" + this.textTempat.Text + "' , '" + dateTanggal.Value.Date.ToString("yyyyMMdd") + "' , '" + this.textAlamat.Text + "');  ";
+            Query += "INSERT INTO tabungan (kelas)  VALUES('"+  this.textKelas.Text +"')";
             MySqlConnection conDatabase = new MySqlConnection(constring);
             MySqlCommand cmd = new MySqlCommand(Query, conDatabase);
             MySqlDataReader myReader;
